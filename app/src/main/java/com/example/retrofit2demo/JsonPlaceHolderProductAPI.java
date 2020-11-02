@@ -10,16 +10,18 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface JsonPlaceHolderProductAPI {
-    @GET("comphan")
-    Call<List<Product>> getRices();
-    @GET("trasua")
-    Call<List<Product>> getMilkTeas();
-    @GET("anvat")
-    Call<List<Product>> getSnacks();
-    @GET("bunpho")
-    Call<List<Product>> getNoodles();
-    @POST("test_retrofit")
-    @FormUrlEncoded
-    Call<Product> saveProduct(@Field("name") String username,
-                              @Field("address") String address);
+//    @GET("comphan")
+//    Call<List<Product>> getRices();
+//    @GET("trasua")
+//    Call<List<Product>> getMilkTeas();
+//    @GET("anvat")
+//    Call<List<Product>> getSnacks();
+//    @GET("bunpho")
+//    Call<List<Product>> getNoodles();
+//    @POST("test_retrofit")
+//    @FormUrlEncoded
+//    Call<Product> saveProduct(@Field("name") String username,
+//                              @Field("address") String address);
+    @POST("getlistshortnewsrq")
+    Call<Poco> getlistshortnewsrq(@Body post post);
 }
